@@ -98,11 +98,11 @@ describe('parser/javascript/subexp.js', function() {
         groupCounter: 2
       },
       '(?=test)': {
-        label: 'positive lookahead',
+        label: '正向先行断言',
         groupCounter: 1
       },
       '(?!test)': {
-        label: 'negative lookahead',
+        label: '负向先行断言',
         groupCounter: 1
       },
       '(?:test)': {
