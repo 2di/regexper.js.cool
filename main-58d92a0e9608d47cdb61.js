@@ -31423,8 +31423,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   labelMap: {
     '?:': '',
-    '?=': 'positive lookahead',
-    '?!': 'negative lookahead'
+    '?=': '正向先行断言',
+    '?!': '负向先行断言'
   },
   // Renders the subexp into the currently set container.
   _render: function _render() {
@@ -31941,4 +31941,4 @@ function icon(selector) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main-5887796d87802f58ae53.js.map
+//# sourceMappingURL=main-58d92a0e9608d47cdb61.js.map
