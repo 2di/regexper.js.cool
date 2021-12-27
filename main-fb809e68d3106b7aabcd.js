@@ -26240,7 +26240,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   type: 'any-character',
   _render: function _render() {
-    return this.renderLabel('any character');
+    return this.renderLabel('任意字符');
   }
 });
 
@@ -31149,10 +31149,10 @@ function formatTimes(times) {
 
           return formatTimes(this.minimum - 1);
         } else if (this.minimum <= 1 && this.maximum >= 2) {
-          return "at most ".concat(formatTimes(this.maximum - 1));
+          return "\u81F3\u591A ".concat(formatTimes(this.maximum - 1));
         } else if (this.minimum >= 2) {
           if (this.maximum === -1) {
-            return "".concat(this.minimum - 1, "+ times");
+            return "".concat(this.minimum - 1, "+ \u6B21");
           } else {
             return "".concat(this.minimum - 1, "\u2026").concat(formatTimes(this.maximum - 1));
           }
@@ -31341,9 +31341,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   type: 'root',
   flagLabels: {
-    i: 'Ignore Case',
-    g: 'Global',
-    m: 'Multiline',
+    i: '大小写不敏感',
+    g: '全局',
+    m: '多行',
     y: 'Sticky',
     u: 'Unicode'
   },
@@ -31354,7 +31354,7 @@ __webpack_require__.r(__webpack_exports__);
     var flagText; // Render a label for any flags that have been set of the expression.
 
     if (this.flags.length > 0) {
-      flagText = this.container.text(0, 0, "Flags: ".concat(this.flags.join(', ')));
+      flagText = this.container.text(0, 0, "\u6807\u8BB0: ".concat(this.flags.join(', ')));
     } // Render the content of the regular expression.
 
 
@@ -31941,4 +31941,4 @@ function icon(selector) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main-3dc5082f1e3b6f7ff872.js.map
+//# sourceMappingURL=main-fb809e68d3106b7aabcd.js.map
