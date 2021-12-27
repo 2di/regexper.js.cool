@@ -26301,7 +26301,7 @@ __webpack_require__.r(__webpack_exports__);
     // The label for the charset will be:
     // - "One of:" for charsets of the form: `[abc]`.
     // - "None of:" for charsets of the form: `[^abc]`.
-    this.label = this.properties.invert.textValue === '^' ? 'None of:' : 'One of:'; // Removes any duplicate parts from the charset. This is based on the type
+    this.label = this.properties.invert.textValue === '^' ? '不包括:' : '以下之一:'; // Removes any duplicate parts from the charset. This is based on the type
     // and text value of the part, so `[aa]` will have only one item, but
     // `[a\x61]` will contain two since the first matches "a" and the second
     // matches 0x61 (even though both are an "a").
@@ -31115,9 +31115,9 @@ __webpack_require__.r(__webpack_exports__);
 // rendering of [MatchFragment](./match_fragment.html) nodes.
 function formatTimes(times) {
   if (times === 1) {
-    return 'once';
+    return '1 次';
   } else {
-    return "".concat(times, " times");
+    return "".concat(times, " \u6B21");
   }
 }
 
@@ -31941,4 +31941,4 @@ function icon(selector) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main-58d92a0e9608d47cdb61.js.map
+//# sourceMappingURL=main-3dc5082f1e3b6f7ff872.js.map
