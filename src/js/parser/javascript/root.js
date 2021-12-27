@@ -7,9 +7,9 @@ export default {
   type: 'root',
 
   flagLabels: {
-    i: 'Ignore Case',
-    g: 'Global',
-    m: 'Multiline',
+    i: '大小写不敏感',
+    g: '全局',
+    m: '多行',
     y: 'Sticky',
     u: 'Unicode'
   },
@@ -20,7 +20,7 @@ export default {
 
     // Render a label for any flags that have been set of the expression.
     if (this.flags.length > 0) {
-      flagText = this.container.text(0, 0, `Flags: ${this.flags.join(', ')}`);
+      flagText = this.container.text(0, 0, `标记: ${this.flags.join(', ')}`);
     }
 
     // Render the content of the regular expression.
