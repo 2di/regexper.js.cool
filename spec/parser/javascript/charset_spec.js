@@ -8,7 +8,7 @@ describe('parser/javascript/charset.js', function() {
 
   _.forIn({
     '[abc]': {
-      label: 'One of:',
+      label: '以下之一:',
       elements: [
         jasmine.objectContaining({ type: 'literal', textValue: 'a' }),
         jasmine.objectContaining({ type: 'literal', textValue: 'b' }),
@@ -16,7 +16,7 @@ describe('parser/javascript/charset.js', function() {
       ]
     },
     '[^abc]': {
-      label: 'None of:',
+      label: '不包括:',
       elements: [
         jasmine.objectContaining({ type: 'literal', textValue: 'a' }),
         jasmine.objectContaining({ type: 'literal', textValue: 'b' }),
@@ -24,19 +24,19 @@ describe('parser/javascript/charset.js', function() {
       ]
     },
     '[aaa]': {
-      label: 'One of:',
+      label: '以下之一:',
       elements: [
         jasmine.objectContaining({ type: 'literal', textValue: 'a' })
       ]
     },
     '[a-z]': {
-      label: 'One of:',
+      label: '以下之一:',
       elements: [
         jasmine.objectContaining({ type: 'charset-range', textValue: 'a-z' })
       ]
     },
     '[\\b]': {
-      label: 'One of:',
+      label: '以下之一:',
       elements: [
         jasmine.objectContaining({ type: 'charset-escape', textValue: '\\b' })
       ]

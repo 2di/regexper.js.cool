@@ -4,9 +4,9 @@
 
 function formatTimes(times) {
   if (times === 1) {
-    return 'once';
+    return '1 次';
   } else {
-    return `${times} times`;
+    return `${times} 次`;
   }
 }
 
